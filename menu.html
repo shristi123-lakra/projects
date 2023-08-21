@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        header{
+            background-color: teal;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+        }
+        header ul{
+            list-style-type: none;
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        header ul li a{
+            text-decoration: none;
+            color: crimson;
+        }
+        section{
+            background-image: url("images/bg1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            padding-top: 30px;
+        }
+        .signup{
+            background-color: greenyellow;
+            height: 60vh;
+            width: 60%;
+            opacity: 0.7;
+            box-shadow: 0px 0px 10px rgb(255, 158, 47);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px;
+            margin: auto;
+            border-radius: 20px;
+        }
+        .signup form{
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .signup form input{
+            height: 30px;
+            border: none;
+            border-bottom: 2px solid goldenrod;
+            outline: none;
+            font-size: 1.25em;
+            padding-left: 5px;
+        }
+        .signup form input:focus{
+            background-color: rgb(163, 214, 87);
+        }
+        .signup form button{
+            width: 50%;
+            height: 30px;
+            background-color: orangered;
+            color: darkblue;
+        }
+        .signup form button:hover{
+            background: radial-gradient(#f69d3c, #3f87a6);
+            cursor: pointer;
+        }
+        header button{
+            width: 100px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: whitesmoke;
+        }
+        header button:hover{
+            background-color: crimson;
+            border: 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dzinex</h1>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICE</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+        <button>Log In</button>
+    </header>
+    <section>
+        <div class="signup">
+            <h2>User SignUp</h2>
+            <form action="">
+                <input type="text">
+                <input type="email">
+                <input type="text">
+                <input type="password">
+                <button type="submit">Singup Now</button>
+            </form>
+            <div class="log">Already Registered?<a href="">Log In</a></div>
+        </div>
+    </section>
+</body>
+</html>
